@@ -1,0 +1,103 @@
+/* PGNMR.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #8B0000; /* Darker red */
+    color: white;
+    padding: 10px 50px; /* Increased padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Castoro', serif;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 100px; /* Reduced gap */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Castoro', serif;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a.active {
+    background-color: #701717;
+    border: 2px solid white;
+}
+
+nav a:hover {
+    color: #c37e7e;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 20px; /* Larger text */
+    border: none;
+    cursor: pointer;
+    font-family: 'Castoro', serif; /* Font change */
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    color: #c37e7e;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #8B0000;
+    min-width: 200px; /* Larger box */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow: hidden; /* Ensures no overflow */
+    font-family: 'Castoro', serif; /* Font change */
+    top: 100%;
+    left: 0;
+    width: 200px; /* Ensure it stays within bounds */
+    transition: max-height 0.5s ease-in-out; /* Animation */
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 15px 20px; /* Larger padding */
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 18px; /* Larger text */
+}
+
+.dropdown-content a:hover {
+    background-color: #c37e7e;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    max-height: 300px; /* Expanded height */
+    opacity: 1;
+    visibility: visible;
+}

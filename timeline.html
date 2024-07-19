@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+    <link rel="stylesheet" href="PGNMR.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            padding: 2em;
+        }
+        .timeline-box {
+            background: #fff;
+            padding: 1em;
+            margin: 1em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .timeline-box:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PeakGen</h1>
+        <nav>
+            <a href="PGHome.html">Home</a>
+            <a href="PGNMR.html">NMR</a>
+            <div class="dropdown">
+                <a href="PGTools.html" class="dropbtn">Tools</a>
+                <div class="dropdown-content">
+                    <a href="#">LLL</a>
+                    <a href="#">OOO</a>
+                    <a href="#">GGG</a>
+                </div>
+            </div>
+            <a href="PGTimeline.html" class="active">Timeline</a>
+            <a href="PGAbout.html">About</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="timeline-box" onclick="location.href='timeline1.html'">
+            NMR Buss
+        </div>
+        <div class="timeline-box">
+            Timeline 2
+        </div>
+        <div class="timeline-box">
+            Timeline 3
+        </div>
+        <!-- Add more timeline boxes as needed -->
+    </div>
+</body>
+</html>
